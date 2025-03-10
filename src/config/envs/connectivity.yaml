@@ -1,0 +1,19 @@
+env: connectivity
+
+env_args:
+  map_name: "Plain"
+  episode_limit: 320
+  desired_comm_dist: 50
+  r_collision_avoidance: 20
+  n_agents: 3
+  x_len: 100
+  y_len: 100
+  seed: null
+
+test_greedy: True
+test_nepisode: 32
+test_interval: 10000
+log_interval: 10000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 250000
