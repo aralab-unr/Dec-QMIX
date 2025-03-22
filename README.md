@@ -7,3 +7,51 @@ The most prominent CTDE framework, QMIX has shown exceptional performance in coo
 To address these issues, we propose Decentralized QMIX (Dec-QMIX), a novel approach that bridges the gap between QMIX and Independent Q-Learning (IQL). Dec-QMIX learns a decentralized, factored joint action-value function, enabling adaptive coordination among UAVs. It employs a local per-agent mixing network for joint action-value estimation and a distributed consensus filter to achieve convergence to a unified joint action-value function in a decentralized manner.
 
 <img src="figures/Dec-QMIX_arch.png">
+
+## Installation Instructions
+In this repository, we will see how we built our Dec-QMIX over the previous QMIX work. The original fine-tuned QMIX repository is [here](https://github.com/hijkzzz/pymarl2).
+
+**Libraries needed before installation:**
+- Git
+- Anaconda 3 or Miniconda 3
+
+**Step-by-step instructions**
+Clone github page
+```shell
+git clone https://github.com/aralab-unr/Dec-QMIX.git
+cd Dec-QMIX
+```
+Create new Conda environment and Install Python packages
+```shell
+conda create -n pymarl python=3.8 -y
+conda activate pymarl
+
+bash install_dependecies.sh
+```
+Set up StarCraft II Multi-Agent Challenge Environment:
+```shell
+bash install_sc2.sh
+```
+
+## Command Line Tools
+To run an experiment:
+**StarCraft II Multi-Agent Challenge Environment**
+```shell
+# Run StarCraft 2 Multi-Agent Environment with QMIX algorithm
+python3 src/main.py --config=qmix --env-config=sc2 with env_args.map_name=2s3z
+```
+```shell
+# Run StarCraft 2 Multi-Agent Environment with Dec-QMIX algorithm
+python3 src/main.py --config=qmix --env-config=sc2 with env_args.map_name=2s3z run=default_gs runner=parallel_gs learner=qlearner_gs
+```
+Configure `env_args.map_name` to change the map e.g., `2c_vs_64zg`, `MMM2`, or any other environment.
+
+**Kill all training processes**
+```shell
+# all python and game processes of current user will quit.
+bash clean.sh
+```
+
+## Contact
+[Gaurav Srikar](gauravsrikar@gmail.com)
+[Dr. Hung (Jim) La](hla@unr.edu)
