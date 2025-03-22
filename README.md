@@ -39,11 +39,11 @@ To run an experiment:
 
 **StarCraft II Multi-Agent Challenge Environment**
 ```shell
-# Run StarCraft 2 Multi-Agent Environment with QMIX algorithm
+# Run SMAC Environment with QMIX algorithm
 python3 src/main.py --config=qmix --env-config=sc2 with env_args.map_name=2s3z
 ```
 ```shell
-# Run StarCraft 2 Multi-Agent Environment with Dec-QMIX algorithm
+# Run SMAC Environment with Dec-QMIX algorithm
 python3 src/main.py --config=qmix --env-config=sc2 with env_args.map_name=2s3z run=default_gs runner=parallel_gs learner=qlearner_gs
 ```
 Configure `env_args.map_name` to change the map e.g., `2c_vs_64zg`, `MMM2`, or any other environment.
