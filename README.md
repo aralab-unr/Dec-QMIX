@@ -35,6 +35,7 @@ bash install_sc2.sh
 
 ## Command Line Tools
 To run an experiment:
+
 **StarCraft II Multi-Agent Challenge Environment**
 ```shell
 # Run StarCraft 2 Multi-Agent Environment with QMIX algorithm
