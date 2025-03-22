@@ -29,7 +29,7 @@ conda activate pymarl
 
 bash install_dependecies.sh
 ```
-Set up StarCraft II Multi-Agent Challenge Environment:
+Set up StarCraft II Multi-Agent Challenge Environment
 ```shell
 bash install_sc2.sh
 ```
