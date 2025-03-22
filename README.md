@@ -16,6 +16,7 @@ In this repository, we will see how we built our Dec-QMIX over the previous QMIX
 - Anaconda 3 or Miniconda 3
 
 **Step-by-step instructions**
+
 Clone github page
 ```shell
 git clone https://github.com/aralab-unr/Dec-QMIX.git
