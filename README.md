@@ -53,5 +53,5 @@ bash clean.sh
 ```
 
 ## Contact
-[Gaurav Srikar](gauravsrikar@gmail.com)
-[Dr. Hung (Jim) La](hla@unr.edu)
+- [Gaurav Srikar](mailto:gauravsrikar@gmail.com)
+- [Dr. Hung (Jim) La](mailto:hla@unr.edu)
