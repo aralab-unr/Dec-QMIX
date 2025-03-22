@@ -6,3 +6,4 @@ The most prominent CTDE framework, QMIX has shown exceptional performance in coo
 
 To address these issues, we propose Decentralized QMIX (Dec-QMIX), a novel approach that bridges the gap between QMIX and Independent Q-Learning (IQL). Dec-QMIX learns a decentralized, factored joint action-value function, enabling adaptive coordination among UAVs. It employs a local per-agent mixing network for joint action-value estimation and a distributed consensus filter to achieve convergence to a unified joint action-value function in a decentralized manner.
 
+<img src="figures/Dec-QMIX_Arch.png" width="525">
