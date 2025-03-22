@@ -46,6 +46,16 @@ python3 src/main.py --config=qmix --env-config=sc2 with env_args.map_name=2s3z r
 ```
 Configure `env_args.map_name` to change the map e.g., `2c_vs_64zg`, `MMM2`, or any other environment.
 
+**Wildfire Environment**
+```shell
+# Run Wildfire Environment with QMIX algorithm
+python3 src/main.py --config=qmix --env-config=wildfire with run=default_gs2 runner=parallel_gs2 mac= n_mac_gs2 learner=qlearner_gs
+```
+```shell
+# Run Wildfire Environment with Dec-QMIX algorithm
+python3 src/main.py --config=qmix --env-config=wildfire with run=default_gs3 runner=parallel_gs3 mac= n_mac_gs2 learner=qlearner_gs
+```
+
 **Kill all training processes**
 ```shell
 # all python and game processes of current user will quit.
